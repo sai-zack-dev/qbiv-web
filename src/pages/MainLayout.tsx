@@ -8,7 +8,7 @@ interface MainLayoutProps {
 
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
   return (
-    <div className="relative w-full bg-gradient-to-br from-blue-100 via-white to-blue-100 dark:from-slate-900 dark:via-blue-900 dark:to-black">
+    <div className="relative w-full bg-gradient-to-br from-blue-100 via-white to-blue-100 dark:from-slate-900 dark:via-blue-900/50 dark:to-black">
       <Header />
       {React.cloneElement(children)}
       <Footer />

@@ -25,7 +25,7 @@ function Footer() {
     { name: "GitHub", icon: FaGithub, href: "#github" },
   ];
   return (
-    <div className="flex flex-col sm:flex-row justify-between px-5 gap-5">
+    <div className="flex flex-col sm:flex-row justify-between px-5 gap-5 pt-25">
       <div className="flex flex-col sm:flex-row gap-5 flex-grow justify-around">
         {/* Quick link */}
         <div className="flex flex-col sm:items-start items-center border-b pb-5">

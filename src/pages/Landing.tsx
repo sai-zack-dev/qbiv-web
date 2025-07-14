@@ -1,13 +1,15 @@
 import HeroSection from "@/components/HeroSection"
-import DummyContent from "./DummyContent"
+import { UsageFlow } from "@/components/UsageFlow"
+import KeyFeatures from "@/components/KeyFeatures"
+import TargetAudience from "@/components/TargetAudience"
 
 function Landing() {
   return (
     <>
       <HeroSection />
-      {Array.from({ length: 5 }, (_, i) => (
-        <DummyContent key={i} index={i} />
-      ))}
+      <KeyFeatures />
+      <UsageFlow />
+      <TargetAudience />
     </>
   )
 }
