@@ -12,20 +12,21 @@ import {
   MobileNavMenu,
 } from "@/components/ui/resizable-navbar";
 import { useState } from "react";
+import { FaDownload } from "react-icons/fa"
 
 function Header() {
   const navItems = [
     {
-      name: "Overview",
-      link: "#overview",
+      name: "Journey",
+      link: "#",
     },
     {
-      name: "Features",
-      link: "#features",
+      name: "About",
+      link: "#",
     },
     {
-      name: "Technologies",
-      link: "#technologies",
+      name: "Assets",
+      link: "#",
     },
   ];
 
@@ -39,6 +40,9 @@ function Header() {
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
             <ThemeToggle />
+            <NavbarButton className="flex gap-2 dark:bg-white dark:text-black px-6 py-1.5 rounded-full justify-center items-center hover:bg-blue-500 hover:text-white font-normal">
+              <FaDownload /> Download
+              </NavbarButton>
           </div>
         </NavBody>
 

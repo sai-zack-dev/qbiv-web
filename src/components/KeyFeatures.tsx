@@ -1,48 +1,48 @@
 import { cn } from "@/lib/utils";
 import {
-  IconCloud,
-  IconCurrencyDollar,
-  IconEaseInOut,
-  IconHelp,
-  IconRouteAltLeft,
-  IconTerminal2,
-} from "@tabler/icons-react";
+  IconRobot,
+  IconChartBar,
+  IconSettingsCog,
+  IconCode,
+  IconDeviceDesktop,
+  IconSourceCode
+} from "@tabler/icons-react"
 
 export default function KeyFeatures() {
   const features = [
     {
-      title: "Built for developers",
+      title: "AI-Powered Query Builder",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
-      icon: <IconTerminal2 />,
+        "Generate queries instantly using natural language with multi-language support.",
+      icon: <IconRobot />,
     },
     {
-      title: "Ease of use",
+      title: "100+ Chart Types Supported",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
-      icon: <IconEaseInOut />,
+        "Choose from a wide variety of chart types, from bar to radar and beyond.",
+      icon: <IconChartBar />,
     },
     {
-      title: "Pricing like no other",
+      title: "Easy Customize Chart",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
-      icon: <IconCurrencyDollar />,
+        "Modify chart colors, labels, axis, and styles with ease.",
+      icon: <IconSettingsCog />,
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
-      icon: <IconCloud />,
+      title: "Form-based Query Builder",
+      description: "Build SQL queries using an intuitive, no-code form interface.",
+      icon: <IconCode />,
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
-      icon: <IconRouteAltLeft />,
+      title: "Offline-first Desktop App",
+      description: "Use QBIV anytime, anywhere — no internet connection required.",
+      icon: <IconDeviceDesktop />,
     },
     {
-      title: "24/7 Customer Support",
+      title: "Free & Open Source",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
-      icon: <IconHelp />,
+        "Use it without limits — QBIV is free to use and fully open-source.",
+      icon: <IconSourceCode />,
     },
   ];
   return (

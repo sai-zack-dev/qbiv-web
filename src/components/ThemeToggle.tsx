@@ -10,8 +10,8 @@ const ThemeToggle = () => {
         console.log("Toggle button clicked");
         toggleTheme();
       }}
-      className={`p-2 rounded bg-transparent h-[50px] ${
-        theme === "dark" ? "text-4xl" : "text-2xl"
+      className={`p-2 rounded bg-transparent h-[50px] cursor-pointer ${
+        theme === "dark" ? "text-3xl" : "text-xl"
       } dark:text-white aspect-square shadow-none`}
     >
       {theme === "dark" ? "☼" : "☾"}
