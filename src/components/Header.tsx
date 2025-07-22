@@ -16,17 +16,29 @@ import { FaDownload } from "react-icons/fa"
 
 function Header() {
   const navItems = [
+    // {
+    //   name: "Journey",
+    //   link: "#",
+    // },
+    // {
+    //   name: "About",
+    //   link: "#",
+    // },
+    // {
+    //   name: "Assets",
+    //   link: "#",
+    // },
     {
-      name: "Journey",
-      link: "#",
+      name: "Features",
+      link: "#features",
     },
     {
-      name: "About",
-      link: "#",
+      name: "Flow",
+      link: "#flow",
     },
     {
-      name: "Assets",
-      link: "#",
+      name: "Audiences",
+      link: "#audiences",
     },
   ];
 
@@ -39,7 +51,7 @@ function Header() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             <NavbarButton className="flex gap-2 dark:bg-white dark:text-black px-6 py-1.5 rounded-full justify-center items-center hover:bg-blue-500 hover:text-white font-normal">
               <FaDownload /> Download
               </NavbarButton>
@@ -71,7 +83,7 @@ function Header() {
               </a>
             ))}
             <div className="flex w-full gap-5">
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             <NavbarButton className="flex justify-center items-center flex-1 gap-3">
               <FaDownload /> Download
               </NavbarButton>

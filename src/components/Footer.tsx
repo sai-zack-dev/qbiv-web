@@ -3,11 +3,11 @@ import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Footer() {
   const quickLinks = [
-    { name: "Home", href: "#home" },
-    { name: "Overview", href: "#about" },
-    { name: "Features", href: "#services" },
-    { name: "Technologies", href: "#portfolio" },
-    { name: "Mission", href: "#blog" },
+    { name: "Home", href: "#" },
+    { name: "Features", href: "#features" },
+    { name: "Flow", href: "#flow" },
+    { name: "Audiences", href: "#audiences" },
+    { name: "Footer", href: "#footer" },
   ];
 
   const supportLinks = [

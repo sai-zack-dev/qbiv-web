@@ -39,14 +39,14 @@ export function UsageFlow() {
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pb-10">
             <img
-              src="https://assets.aceternity.com/templates/startup-1.webp"
+              src="ai-query1.png"
               alt="startup template"
               width={500}
               height={500}
               className="h-44 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-60 lg:h-60"
             />
             <img
-              src="https://assets.aceternity.com/templates/startup-2.webp"
+              src="ai-query2.png"
               alt="startup template"
               width={500}
               height={500}
@@ -59,14 +59,14 @@ export function UsageFlow() {
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <img
-              src="https://assets.aceternity.com/templates/startup-1.webp"
+              src="manual-query1.png"
               alt="startup template"
               width={500}
               height={500}
               className="h-44 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-60 lg:h-60"
             />
             <img
-              src="https://assets.aceternity.com/templates/startup-2.webp"
+              src="manual-query2.png"
               alt="startup template"
               width={500}
               height={500}
@@ -85,14 +85,14 @@ export function UsageFlow() {
           </p>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <img
-              src="https://assets.aceternity.com/templates/startup-1.webp"
+              src="select-chart.png"
               alt="startup template"
               width={500}
               height={500}
               className="h-44 w-full rounded-lg object-cover shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset] md:h-60 lg:h-60"
             />
             <img
-              src="https://assets.aceternity.com/templates/startup-2.webp"
+              src="config-chart.png"
               alt="startup template"
               width={500}
               height={500}
@@ -104,7 +104,7 @@ export function UsageFlow() {
     },
   ];
   return (
-    <div className="relative w-full overflow-clip bg-gradient-to-b from-white/0 dark:via-black via-white to-black/0">
+    <div id="flow" className="relative w-full overflow-clip bg-gradient-to-b from-white/0 dark:via-black via-white to-black/0">
       <div className="max-w-7xl mx-auto pt-25 px-4 md:px-8 lg:px-10">
         <h2 className="text-4xl mb-4 text-black dark:text-white max-w-4xl">
           Get Insights in 3 Simple Steps

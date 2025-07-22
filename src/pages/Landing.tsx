@@ -6,7 +6,7 @@ import TargetAudience from "@/components/TargetAudience"
 function Landing() {
   return (
     <>
-      <HeroSection />
+      <HeroSection/>
       <KeyFeatures />
       <UsageFlow />
       <TargetAudience />

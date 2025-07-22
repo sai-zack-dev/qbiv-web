@@ -46,7 +46,7 @@ export default function KeyFeatures() {
     },
   ];
   return (
-      <div className="relative max-w-7xl mx-auto pt-25 px-4 md:px-8 lg:px-10">
+      <div id="features" className="relative max-w-7xl mx-auto pt-25 px-4 md:px-8 lg:px-10">
         
         <h2 className="text-4xl mb-4 text-black dark:text-white max-w-4xl">
           Explore QBIV's Powerful Features
