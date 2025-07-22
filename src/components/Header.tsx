@@ -70,20 +70,10 @@ function Header() {
                 <span className="block">{item.name}</span>
               </a>
             ))}
-            <div className="flex w-full flex-col gap-4">
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Login
-              </NavbarButton>
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Book a call
+            <div className="flex w-full gap-5">
+            <ThemeToggle />
+            <NavbarButton className="flex justify-center items-center flex-1 gap-3">
+              <FaDownload /> Download
               </NavbarButton>
             </div>
           </MobileNavMenu>

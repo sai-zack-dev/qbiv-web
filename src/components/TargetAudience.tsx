@@ -116,20 +116,17 @@ export function GridPattern({ width, height, x, y, squares, ...props }: any) {
         strokeWidth={0}
         fill={`url(#${patternId})`}
       />
-      {squares && (
-        <svg x={x} y={y} className="overflow-visible">
-          {squares.map(([x, y]: any) => (
-            <rect
-              strokeWidth="0"
-              key={`${x}-${y}`}
-              width={width + 1}
-              height={height + 1}
-              x={x * width}
-              y={y * height}
-            />
-          ))}
-        </svg>
-      )}
+      {squares.map(([x, y]: any, index: number) => (
+        <rect
+          strokeWidth="0"
+          key={`${x}-${y}-${index}`} // Now guaranteed to be unique
+          width={width + 1}
+          height={height + 1}
+          x={x * width}
+          y={y * height}
+        />
+      ))}
+
     </svg>
   );
 }

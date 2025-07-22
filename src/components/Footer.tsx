@@ -92,7 +92,7 @@ function Footer() {
         </div>
       </div>
 
-      <div className="flex-1 justify-center flex">
+      <div className="flex-1 justify-center flex min-w-[200px]">
         <img
           src="/glowing-logo-light.png"
           alt="logo"
