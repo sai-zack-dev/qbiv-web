@@ -87,6 +87,7 @@ export const Compare = ({
     (clientX: number) => {
       if (slideMode === "drag") {
         setIsDragging(true);
+        console.log(clientX)
       }
     },
     [slideMode]
