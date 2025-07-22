@@ -147,6 +147,10 @@ export const Compare = ({
     [handleMove, autoplay]
   );
 
+  if (isMouseOver) {
+    console.log("Mouse is over");
+  }
+
   return (
     <div
       ref={sliderRef}
