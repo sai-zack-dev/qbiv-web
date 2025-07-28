@@ -1,37 +1,66 @@
 import { Compare } from "./ui/compare";
 import { FaWindows, FaApple, FaLinux } from "react-icons/fa";
+import { useOS } from "@/hooks/useOS";
 
 function HeroSection() {
+  const os = useOS();
+
+  const downloadLinks = {
+    Windows: {
+      label: "Download for Windows",
+      url: "/downloads/qbiv-setup.exe",
+    },
+    MacOS: {
+      label: "Download for MacOS",
+      url: "/downloads/qbiv-macos.dmg",
+    },
+    Linux: {
+      label: "Download for Linux",
+      url: "/downloads/qbiv-linux.AppImage",
+    },
+    Unknown: {
+      label: "Download QBIV",
+      url: "/downloads",
+    },
+  };
+  const { label, url } = downloadLinks[os];
   return (
     <div className="w-full h-screen relative overflow-hidden">
       <div className="absolute z-60 bottom-5 sm:bottom-10 left-0 px-4 md:px-8 lg:px-10 flex flex-col gap-2 lg:gap-10">
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold">
-          Unlock Your Data's Potential <br className="hidden sm:block"  />
-          From Complex Data <br className="hidden sm:block"  />
+          Unlock Your Data's Potential <br className="hidden sm:block" />
+          From Complex Data <br className="hidden sm:block" />
           To Actionable Insights Instantly
         </h1>
         <span className="text-xs sm:text-lg lg:text-xl font-normal">
-          The AI-powered BI tool that speaks your language. <br className="hidden sm:block" />
+          The AI-powered BI tool that speaks your language.{" "}
+          <br className="hidden sm:block" />
           Connect, query in human language, and visualize your data across
           platforms.
         </span>
-        <div className="flex gap-3 flex-col sm:flex-row">
-          <button className="bg-blue-500 px-5 sm:py-5 py-3 text-sm text-white rounded-lg cursor-pointer">
-            Download for MacOS
-          </button>
+        <div className="flex gap-5 flex-col sm:flex-row">
+          <a
+            href={url}
+            download
+            className="bg-blue-500 px-10 py-5 items-center justify-center flex text-sm text-white rounded-lg cursor-pointer text-center"
+          >
+            {label}
+          </a>
           <div className="flex flex-col gap-2 text-xs">
-            <span className="text-gray-500 dark:text-slate-300">Supported on all platforms -</span>
+            <span className="text-gray-500 dark:text-slate-300">
+              Supported on all platforms -
+            </span>
             <div className="flex gap-10">
               <div className="flex flex-col items-center">
-                <FaWindows className="w-6 h-6"/>
+                <FaWindows className="w-6 h-6" />
                 <span>Windows</span>
-                </div>
+              </div>
               <div className="flex flex-col items-center">
-                <FaApple className="w-6 h-6"/>
+                <FaApple className="w-6 h-6" />
                 <span>MacOS</span>
               </div>
               <div className="flex flex-col items-center">
-                <FaLinux className="w-6 h-6"/>
+                <FaLinux className="w-6 h-6" />
                 <span>Linux</span>
               </div>
             </div>

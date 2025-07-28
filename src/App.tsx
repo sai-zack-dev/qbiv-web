@@ -4,6 +4,7 @@ import {
 } from "react-router-dom";
 import MainLayout from "./pages/MainLayout";
 import Landing from "./pages/Landing";
+import ErrorPage from "./components/ErrorPage"; // 👈 Create this component
 import { useEffect } from "react";
 
 const router = createBrowserRouter([
@@ -14,15 +15,14 @@ const router = createBrowserRouter([
         <Landing />
       </MainLayout>
     ),
+    errorElement: <ErrorPage />, 
   },
 ]);
 
 function App() {
   useEffect(() => {
-    // Remove the initial HTML loader when React is ready
-    const initialLoader = document.getElementById('initial-loader');
+    const initialLoader = document.getElementById("initial-loader");
     if (initialLoader) {
-      // Add a small delay to ensure smooth transition
       setTimeout(() => {
         initialLoader.remove();
       }, 500);
