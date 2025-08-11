@@ -8,19 +8,19 @@ function HeroSection() {
   const downloadLinks = {
     Windows: {
       label: "Download for Windows",
-      url: "/downloads/qbiv-setup.exe",
+      url: "https://github.com/sai-zack-dev/query-based-intelligence-visualization/releases/latest/download/QBIV.Setup.1.0.0.exe",
     },
     MacOS: {
       label: "Download for MacOS",
-      url: "/downloads/qbiv-macos.dmg",
+      url: "https://github.com/sai-zack-dev/query-based-intelligence-visualization/releases/latest/download/QBIV-1.0.0-arm64.dmg",
     },
     Linux: {
       label: "Download for Linux",
-      url: "/downloads/qbiv-linux.AppImage",
+      url: "https://github.com/sai-zack-dev/query-based-intelligence-visualization/releases/latest/download/QBIV-1.0.0.AppImage",
     },
     Unknown: {
       label: "Download QBIV",
-      url: "/downloads",
+      url: "https://github.com/sai-zack-dev/query-based-intelligence-visualization/releases/latest/download/qbiv_1.0.0_amd64.deb",
     },
   };
   const { label, url } = downloadLinks[os];
