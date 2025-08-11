@@ -47,10 +47,10 @@ function Header() {
   const os = useOS();
 
   const downloadLinks = {
-    Windows: "/downloads/qbiv-setup.exe",
-    MacOS: "/downloads/qbiv-macos.dmg",
-    Linux: "/downloads/qbiv-linux.AppImage",
-    Unknown: "/downloads",
+    Windows: "https://github.com/sai-zack-dev/query-based-intelligence-visualization/releases/latest/download/QBIV.Setup.1.0.0.exe",
+    MacOS: "https://github.com/sai-zack-dev/query-based-intelligence-visualization/releases/latest/download/QBIV-1.0.0-arm64.dmg",
+    Linux: "https://github.com/sai-zack-dev/query-based-intelligence-visualization/releases/latest/download/qbiv_1.0.0_amd64.deb",
+    Unknown: "https://github.com/sai-zack-dev/query-based-intelligence-visualization/releases/latest/download/QBIV-1.0.0.AppImage",
   };
   const link = downloadLinks[os];
   return (
